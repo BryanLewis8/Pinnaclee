@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Erfahre mehr über die Welt der Informatik mit interaktiven Quizfragen.">
+    <meta name="keywords" content="Informatik, Quiz, Kinder, MINT, Lernen">
+    <title>Informatik - MINT für Kinder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MINT für Kinder</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="mathematik.html">Mathematik</a></li>
+                <li><a href="informatik.html">Informatik</a></li>
+                <li><a href="naturwissenschaft.html">Naturwissenschaft</a></li>
+                <li><a href="technik.html">Technik</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Informatik</h2>
+            <p>Entdecke die Grundlagen der Informatik mit spannenden Quizfragen:</p>
+
+            <div class="quiz-container">
+                <h3>Frage 1: Was bedeutet HTML?</h3>
+                <button onclick="checkAnswer('info', 1, 'HyperText Markup Language')">HyperText Markup Language</button>
+                <button onclick="checkAnswer('info', 1, 'HyperText Machine Learning')">HyperText Machine Learning</button>
+                <p id="info-feedback-1"></p>
+            </div>
+
+            <!-- 9 weitere Fragen -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 MINT für Kinder</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

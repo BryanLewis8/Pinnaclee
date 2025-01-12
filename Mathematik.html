@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lerne Mathematik mit lustigen Quizzen und Spielen.">
+    <meta name="keywords" content="Mathematik, Quiz, Kinder, Lernen, MINT">
+    <title>Mathematik - MINT für Kinder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MINT für Kinder</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="mathematik.html">Mathematik</a></li>
+                <li><a href="informatik.html">Informatik</a></li>
+                <li><a href="naturwissenschaft.html">Naturwissenschaft</a></li>
+                <li><a href="technik.html">Technik</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Mathematik</h2>
+            <p>Teste dein Wissen mit diesen spannenden Mathematik-Quizfragen:</p>
+
+            <div class="quiz-container">
+                <h3>Frage 1: Was ist 7 + 8?</h3>
+                <button onclick="checkAnswer('math', 1, 15)">15</button>
+                <button onclick="checkAnswer('math', 1, 14)">14</button>
+                <button onclick="checkAnswer('math', 1, 13)">13</button>
+                <p id="math-feedback-1"></p>
+            </div>
+
+            <div class="quiz-container">
+                <h3>Frage 2: Was ist 6 x 3?</h3>
+                <button onclick="checkAnswer('math', 2, 18)">18</button>
+                <button onclick="checkAnswer('math', 2, 12)">12</button>
+                <button onclick="checkAnswer('math', 2, 24)">24</button>
+                <p id="math-feedback-2"></p>
+            </div>
+
+            <!-- 8 weitere Fragen -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 MINT für Kinder</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

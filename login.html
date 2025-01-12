@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Einloggen oder registrieren für MINT für Kinder.">
+    <meta name="keywords" content="Login, Registrierung, MINT, Kinder, Lernen, Projekte">
+    <title>Login und Registrierung - MINT für Kinder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MINT für Kinder</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="mathematik.html">Mathematik</a></li>
+                <li><a href="informatik.html">Informatik</a></li>
+                <li><a href="naturwissenschaft.html">Naturwissenschaft</a></li>
+                <li><a href="technik.html">Technik</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="login-page">
+        <section class="login-section">
+            <h2>Einloggen</h2>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <label for="login-username">Benutzername:</label>
+                <input type="text" id="login-username" name="username" placeholder="Benutzername" required>
+
+                <label for="login-password">Passwort:</label>
+                <input type="password" id="login-password" name="password" placeholder="Passwort" required>
+
+                <button type="submit">Einloggen</button>
+            </form>
+            <p id="login-feedback"></p>
+        </section>
+
+        <section class="register-section">
+            <h2>Registrieren</h2>
+            <form id="registerForm" onsubmit="handleRegister(event)">
+                <label for="register-username">Benutzername:</label>
+                <input type="text" id="register-username" name="username" placeholder="Benutzername" required>
+
+                <label for="register-email">E-Mail:</label>
+                <input type="email" id="register-email" name="email" placeholder="E-Mail-Adresse" required>
+
+                <label for="register-password">Passwort:</label>
+                <input type="password" id="register-password" name="password" placeholder="Passwort" required>
+
+                <label for="register-confirm-password">Passwort bestätigen:</label>
+                <input type="password" id="register-confirm-password" name="confirm-password" placeholder="Passwort bestätigen" required>
+
+                <button type="submit">Registrieren</button>
+            </form>
+            <p id="register-feedback"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 MINT für Kinder</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
