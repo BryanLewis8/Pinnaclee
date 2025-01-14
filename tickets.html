@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kaufen Sie Tickets für das nächste Konzert der Band Neon-Nights.">
+    <meta name="keywords" content="Tickets, Konzert, Band Neon-Nights, Rock 'n' Roll">
+    <title>Neon-Nights Band - Tickets</title>
+    <link rel="stylesheet" href="tickets.css">
+    <!-- Stripe Buy Button Script -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#tour">Konzerttermine</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1 class="animated-text">Willkommen bei der Neon-Nights Band</h1>
+            <p>Kaufen Sie hier Ihre Tickets für das nächste Konzert!</p>
+        </section>
+
+        <section id="tour">
+            <h2>Konzerttermine</h2>
+            <ul>
+                <li>25. Juni 2024, Berlin, Rockpalast</li>
+                <li>30. Juni 2024, Hamburg, Hafenklang</li>
+                <!-- Weitere Konzerte -->
+            </ul>
+        </section>
+
+        <section id="tickets">
+            <h2>Tickets</h2>
+            <p>Wählen Sie Ihr Konzert und die Anzahl der Tickets:</p>
+            <form id="ticketForm">
+                <label for="concert">Konzert:</label>
+                <select id="concert" name="concert">
+                    <option value="Berlin">25. Juni 2024, Berlin, Rockpalast</option>
+                    <option value="Hamburg">30. Juni 2024, Hamburg, Hafenklang</option>
+                </select>
+                <label for="quantity">Anzahl der Tickets:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
+                
+                <!-- Platzhalter für den Stripe Buy Button -->
+                <div id="buyButtonContainer"></div>
+            </form>
+            <div id="confirmation"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Neon-Nights Band. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <!-- Stripe.js -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="tickets.js"></script>
+</body>
+</html>

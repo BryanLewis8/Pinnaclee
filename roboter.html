@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roboterkurs für Kinder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header mit Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">RoboterKurs</div>
+      <ul class="nav-links">
+       <li><a href="index.html">Startseite</a></li>
+                <li><a href="natur.html">Naturwissenschaft</a></li>
+                <li><a href="technik.html">technick</a></li>
+                <li><a href="#kontakt.html">kontakt</a></li>
+                
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hauptinhalt -->
+  <main>
+    <!-- Ziele des Kurses -->
+    <section id="goals">
+      <h1>Ziele des Kurses</h1>
+      <ul>
+        <li>Kindern spielerisch erklären, was Roboter sind.</li>
+        <li>Zeigen, wie Roboter im Alltag helfen.</li>
+        <li>Interaktive Elemente wie ein Quiz und DIY-Projekte anbieten.</li>
+      </ul>
+    </section>
+
+    <!-- Module des Kurses -->
+    <section id="modules">
+      <h2>Module des Kurses</h2>
+      <div class="module">
+        <h3>1. Einführung: Was sind Roboter?</h3>
+
+      <h2>1.1 Roboter im Alltag</h2>
+            <p>Roboter sind schon lange nicht mehr nur langweilige Blechkisten: Sie erforschen fremde Planeten, spielen Schach, Fußball oder Tischtennis, helfen uns Menschen im Haushalt oder trampen sogar durch die Welt.
+                 In unserem Extra tauchen wir ein in die abenteuerliche Welt der Roboter. Manchaml  funktionnieren Roboter mit verschiedenen Button oder anhand einer Fernbedienung.
+                  Schau dir dieses Video an, um mehr zu erfahren!</p>
+            <video controls>
+                <source src="roboter.mp4" type="video/mp4">
+                Dein Browser unterstützt das Video-Tag nicht.
+            </video>
+
+        </section>
+
+
+        <p>Definition und Beispiele, wie Haushaltsroboter, Industrie und Medizin.</p>
+
+        <div class="image-gallery">
+    <button id="prevButton" onclick="prevImage()">⬅ Previous</button>
+    
+    <figure>
+      <img id="galleryImage" src="" alt="Bild">
+      <figcaption id="imageCaption"></figcaption>
+    </figure>
+    
+    <button id="nextButton" onclick="nextImage()">Next ➡</button>
+  </div>
+        
+          
+        
+      <div class="module">
+        <h3>2. Berühmte Roboter und ihre Aufgaben</h3>
+        <p>Beispiele aus Filmen wie Wall-E und echte Roboter wie Boston Dynamics’ Atlas.</p>
+      </div>
+
+      <div class="module">
+        <h3>3. Einfache Robotik und Programmierung</h3>
+        <p>„Programmiere einen Roboter“: Lerne einfache Befehle in einer Simulation.</p>
+        <button onclick="simulateRobot()">Simulation starten</button>
+        <div id="simulation" style="display: none;">
+          <p>Befehl: <button onclick="moveForward()">Vorwärts</button> <button onclick="turnLeft()">Links</button></p>
+          <p>Ergebnis: <span id="robot-result">Der Roboter wartet auf Befehle.</span></p>
+        </div>
+      </div>
+
+    
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Pinnacle</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

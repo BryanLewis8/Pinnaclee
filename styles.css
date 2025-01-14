@@ -154,3 +154,222 @@ p {
     text-align: center;
     font-size: 14px;
 }
+ 
+
+ /*technik und natur*/
+
+.Glückwunsch img {
+    width: 50%; /* Passt die Breite des Bildes an (50% der übergeordneten Breite) */
+    max-width: 300px; /* Begrenzung der maximalen Breite */
+    height: auto; /* Bewahrt die Seitenverhältnisse */
+    display: block; /* Zentriert das Bild zusammen mit margin auto */
+    margin: 0 auto;
+}
+
+.Glückwunsch {
+    text-align: center; /* Zentriert das Figcaption */
+    margin-top: 1rem;
+}
+
+
+.winrad img {
+    width: 50%; /* Passt die Breite des Bildes an (50% der übergeordneten Breite) */
+    max-width: 300px; /* Begrenzung der maximalen Breite */
+    height: auto; /* Bewahrt die Seitenverhältnisse */
+    display: block; /* Zentriert das Bild zusammen mit margin auto */
+    margin: 0 auto;
+}
+
+.winrad {
+    text-align: center; /* Zentriert das Figcaption */
+    margin-top: 1rem;
+}
+
+
+
+.solar img {
+    width: 50%; /* Passt die Breite des Bildes an (50% der übergeordneten Breite) */
+    max-width: 300px; /* Begrenzung der maximalen Breite */
+    height: auto; /* Bewahrt die Seitenverhältnisse */
+    display: block; /* Zentriert das Bild zusammen mit margin auto */
+    margin: 0 auto;
+}
+
+.solar {
+    text-align: center; /* Zentriert das Figcaption */
+    margin-top: 1rem;
+}
+
+
+.Wasserkarftwerk img {
+    width: 50%; /* Passt die Breite des Bildes an (50% der übergeordneten Breite) */
+    max-width: 300px; /* Begrenzung der maximalen Breite */
+    height: auto; /* Bewahrt die Seitenverhältnisse */
+    display: block; /* Zentriert das Bild zusammen mit margin auto */
+    margin: 0 auto;
+}
+
+.Wasserkarftwerk {
+    text-align: center; /* Zentriert das Figcaption */
+    margin-top: 1rem;
+}
+
+
+
+
+/* Galerie */
+.image-gallery {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: left; /* Zentriert die Bilder und Buttons */
+}
+
+/* Bilder mit kleinerer Größe */
+.image-gallery img {
+  width: 80%; /* Passt die Bilder auf 80% der Containerbreite an */
+  max-width: 300px; /* Maximale Breite der Bilder */
+  height: auto; /* Beibehaltung des Seitenverhältnisses */
+  object-fit: cover; /* Bild wird zugeschnitten, um den Container zu füllen */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; /* Optionale sanfte Skalierung */
+}
+
+/* Animation beim Hover */
+.image-gallery img:hover {
+  transform: scale(1.05); /* Leichte Vergrößerung beim Überfahren */
+}
+
+/* quiz erneu */
+.quiz-container {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .quiz-question {
+        margin-bottom: 1.5rem;
+    }
+
+    .quiz-question h2 {
+        color: #333;
+    }
+
+    .quiz-question button {
+        display: inline-block;
+        margin: 0.5rem 0;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      background-color: blueviolet;
+    }
+
+    .quiz-question button.correct {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .quiz-question button.incorrect {
+        background-color: #f44336;
+        color: white;
+    }
+
+    .feedback {
+        margin-top: 0.5rem;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+
+
+
+
+/* Medienabfragen für kleinere Bildschirme */
+@media (max-width: 768px) {
+  .image-gallery img {
+    max-width: 250px; /* Kleine maximale Breite für Handys */
+    width: 90%; /* Bild nimmt 90% der Bildschirmbreite ein */
+  }
+}
+
+
+/* Viewports unter 768px (Tablets und Smartphones) */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .navbar {
+    flex-direction: column; /* Navigation in einer Spalte */
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Links untereinander anordnen */
+    gap: 0.5rem;
+  }
+
+  .module {
+    padding: 0.5rem;
+  }
+
+  button {
+    width: 100%; /* Buttons füllen bei kleinen Bildschirmen die Breite aus */
+  }
+
+  #gallery img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Viewports zwischen 768px und 1024px (Tablets und kleine Desktops) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    gap: 1rem; /* Mehr Abstand zwischen den Links */
+  }
+
+  .module {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Viewports über 1920px (große Bildschirme) */
+@media (min-width: 1920px) {
+  main {
+    max-width: 1200px; /* Inhalte zentrieren und Begrenzung setzen */
+    margin: 0 auto;
+  }
+
+  .module {
+    padding: 2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  #gallery img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
