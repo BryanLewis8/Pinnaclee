@@ -1,0 +1,71 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktseite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+         <div class="logo">
+            <img src="media/logo.png" alt="Logo">
+        </div>
+
+       <h1> Kontakt </h1>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul class="navbar">
+                
+                <li><a href="home.html">Startseite</a></li>
+                <li><a href="natur.html">Naturwissenschaft</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+                <li><a href="technik.html">technick</a></li>
+                <li><a href="about.html">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            
+                
+                <section class="bild-contact">
+                <figure>
+                    <img src="media/logo.png" alt="Logo">
+                    <figcaption>Pinnacle</figcaption>
+                    
+                </figure>
+
+                </section>
+
+                   
+            
+               </div>
+            <form class="contact-form" action="/submit" method="POST">
+                <h2>Schicken Sie uns eine Nachricht!</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ihre Email" required>
+
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+
+                <button type="submit">Nachricht senden</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pinnacle.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

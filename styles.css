@@ -1,162 +1,141 @@
-/* ========= STYLES GLOBAUX ========= */
-/* Global Styles für alle Seiten */
+/* Allgemeine Einstellungen */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-h1, h2, h3 {
-    margin: 0 0 10px;
+  background: url('media/learn.jpg') no-repeat center center/cover;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 header {
-    background: #004d99;
-    color: #fff;
-    padding: 20px 10px;
-    text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
 }
 
-header ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 10px 0 0;
-    padding: 0;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Damit die Navigation bei kleinen Bildschirmen umbrechen kann */
 }
 
-header ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
 
-header ul li a:hover {
-    background: #0066cc;
+.nav-links a {
+  color: white;
+  text-decoration: none;
 }
 
-/* Footer */
-footer {
-    background: #004d99;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* ========= NAVIGATION ========= */
-/* Responsive Navigation mit Flexbox */
-.nav-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-/* ========= MAIN CONTENT ========= */
 main {
-    padding: 20px;
+  padding: 1rem;
 }
 
-/* Bilder */
-.responsive-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+h1, h2, h3 {
+  color: #333;
 }
 
-/* ========= QUIZ-STYLES ========= */
-.quiz-container {
-    background: #e6f7ff;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.module {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.quiz-container h4 {
-    margin-bottom: 10px;
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.quiz-container button {
-    background: #007acc;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+button:hover {
+  background-color: #45a049;
 }
 
-.quiz-container button:hover {
-    background: #005fa3;
+
+
+/* für die flexbox */
+
+ nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        section {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        .quiz-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+  figure >img {
+
+    width: 100%; /* Passt die Breite des Bildes an (50% der übergeordneten Breite) */
+    max-width: 500px; /* Begrenzung der maximalen Breite */
+    height: auto; /* Bewahrt die Seitenverhältnisse */
+    display: block; /* Zentriert das Bild zusammen mit margin auto */
+    margin: 0 auto;
+
+
+  }
+
+
+
+/* für die Galerie */
+
+#gallery img {
+  width: 150px;
+  height: 150px;
+  margin: 0.5rem;
+  border-radius: 8px;
 }
 
-/* ========= LOGIN & REGISTER ========= */
-.login-page {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
 }
-
-section.login-section,
-section.register-section {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-form input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background: #004d99;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-form button:hover {
-    background: #0066cc;
-}
-
-p {
-    text-align: center;
-    font-size: 14px;
-}
- 
-
- /*technik und natur*/
 
 .Glückwunsch img {
     width: 50%; /* Passt die Breite des Bildes an (50% der übergeordneten Breite) */
@@ -289,10 +268,384 @@ p {
 
 
 
+    .navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    background-color: yellowgreen;
+
+
+}
+
+.contact-section h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+.creator {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    float: left;
+    
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+/*für die homepage*/
+
+
+/* Navbar Styles */
+.navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar.active {
+    display: flex;
+}
+
+.navbar li {
+    margin: 0.5rem 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.hamburger div {
+    background: #fff;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* Welcome Section */
+.welcome-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.welcome-section .text-content {
+    text-align: left;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-section button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.welcome-section button:hover {
+    background: #555;
+}
+
+.welcome-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox Section for Subjects */
+.subjects-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.subject {
+    text-align: center;
+    flex: 1 1 calc(25% - 2rem);
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Flexbox Section  Subjects */
+.subjects-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.subject {
+    text-align: center;
+    flex: 1 1 calc(25% - 2rem);
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subject img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.subject h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 2rem;
+}
+
+.logo  h1 {
+    padding: 50%;
+}
+
+/*für die Über uns */
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    background-color: yellowgreen;
+}
+
+.developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.developer img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.developer p {
+    color: black;
+}
 
 
 
 
+/* Flexbox für Content-Items in Natur */
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.content-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    flex: 1 1 calc(33.333% - 2rem);
+    text-align: center;
+}
+
+.content-item h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.content-item p {
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.content-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/*für die technikseite*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Abstand zwischen den Elementen */
+    align-items: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.flex-container .text {
+    flex: 1; /* Text nimmt verfügbaren Platz ein */
+    max-width: 50%; /* Begrenzung der Breite */
+    color: black;
+}
+
+
+.flex-container figure {
+    flex: 1; /* Bild nimmt verfügbaren Platz ein */
+    max-width: 40%; /* Begrenzung der Breite */
+    text-align: center;
+}
+
+figure figcaption {
+    color: yellow; /* Définit la couleur du texte */
+    font-weight: bold; /* Optionnel : rend le texte en gras */
+    text-align: center; /* Optionnel : centre le texte */
+    margin-top: 0.5rem; /* Optionnel : espace au-dessus */
+}
+
+
+.flex-container img {
+    width: 100%; /* Bild passt sich an */
+    max-width: 300px; /* Begrenzung der Breite */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* RESPONSIVE DESIGN */
 
 
 /* Medienabfragen für kleinere Bildschirme */
@@ -370,6 +723,62 @@ p {
     width: 200px;
     height: 200px;
   }
+}
+
+/* Responsive Design Kontakt*/
+@media (min-width: 768px) {
+    .contact-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .creators {
+        justify-content: space-between;
+    }
+}
+
+/*responsiv für homepage*/
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navbar li {
+        margin: 0 1rem;
+    }
+}
+
+/* für die Über uns */
+@media (min-width: 768px) {
+    .about-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* für die naturseite */
+@media (max-width: 768px) {
+    .content-item {
+        flex: 1 1 100%;
+    }
+}
+/*für die technikseite*/
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Inhalte untereinander anordnen */
+        text-align: center; /* Zentriere den Text */
+    }
+
+    .flex-container .text, 
+    .flex-container figure {
+        max-width: 100%; /* Breite auf 100% begrenzen */
+    }
 }
 
 
